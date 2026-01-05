@@ -1,15 +1,13 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
 int main()
 {
-    int fac=1;
-    int i;
-    int n=1;
-    int m;
-    printf("Enter number:");
-    scanf("%d",&i);
-    while(n<=10) {
-        m=i*n;
-        printf("%d x %d = %d\n",i,n,m);
-        n+=1;
+    int n,i,m;
+    cout<<"Enter the number: ";
+    cin>>n;
+    for(i=1; i<=10; i++)
+    {
+        m=n*i;
+        cout<<n<<"x"<<i<<"="<<m<<endl;
     }
 }
